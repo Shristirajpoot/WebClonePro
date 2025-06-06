@@ -218,32 +218,33 @@ export default function Home() {
       )}
 
       {/* ---------- footer (icons only) ---------- */}
-    <footer className="border-t border-gray-200 dark:border-gray-700 mt-12 px-6 py-6 text-sm text-gray-600 dark:text-gray-400 flex items-center justify-center gap-6 text-center">
-  <p className="flex items-center gap-1">
-    © {new Date().getFullYear()} <span className="font-semibold text-foreground">Orchids</span> • Built with <span className="text-red-500">❤</span>
-  </p>
+  <footer className="border-t border-gray-200 dark:border-gray-700 mt-12 px-6 py-6 text-sm text-gray-600 dark:text-gray-400 flex items-center justify-center gap-6 text-center">
+        <p className="flex items-center gap-1">
+          © {new Date().getFullYear()}{" "}
+          <span className="font-semibold text-foreground">Orchids</span> • Built with{" "}
+          <span className="text-red-500">❤</span>
+        </p>
 
-  <a
-    href="https://github.com/your-repo"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="GitHub"
-    className="text-gray-500 dark:text-gray-400 hover:text-foreground transition"
-  >
-    <FaGithub className="h-5 w-5" />
-  </a>
+        <a
+          href="https://github.com/your-repo"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
+          className="text-gray-500 dark:text-gray-400 hover:text-foreground transition"
+        >
+          <FaGithub className="h-5 w-5" />
+        </a>
 
-  <a
-    href="https://orchids.ai"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Website"
-    className="text-gray-500 dark:text-gray-400 hover:text-foreground transition"
-  >
-    <GlobeAltIcon className="h-5 w-5" />
-  </a>
-</footer>
-
-    </div>
+        <a
+          href="https://orchids.ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Website"
+          className="text-gray-500 dark:text-gray-400 hover:text-foreground transition"
+        >
+          <GlobeAltIcon className="h-5 w-5" />
+        </a>
+      </footer>
+    </div>  {/* <-- this is the root div closing */}
   );
 }

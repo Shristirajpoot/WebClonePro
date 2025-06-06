@@ -35,6 +35,24 @@ It demonstrates proficiency in asynchronous programming with Python, modern API 
 - 🚨 **Error handling**: Gracefully handles scraping errors and invalid URLs.
 - 🚀 **Caching and optimization**: (If implemented) Improves response times for repeated requests.
 
+- 
+## 📸 Screenshots
+
+![Example1](./Screenshot%202025-06-07%20013644.png)
+
+![Example2](./Screenshot%202025-06-07%20013711.png)
+
+![Example3](./Screenshot%202025-06-07%20013739.png)
+
+
+![Example4](./Screenshot%202025-06-07%20013807.png)
+
+
+![Example5](./Screenshot%202025-06-07%20013826.png)
+
+
+![Example6](./Screenshot%202025-06-07%20013912.png)
+
 
 ## 🎥 Demo Video
 

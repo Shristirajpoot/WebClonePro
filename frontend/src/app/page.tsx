@@ -75,10 +75,11 @@ export default function Home() {
       if (!out.pages?.length) throw new Error("No pages returned");
       setPages(out.pages);
       setSel(0);
-    } catch (e: any) {
-      setErr(e.message);
-    } finally {
-      setLoading(false);
+    } catch (e) {
+  if (e instanceof Error) {
+    setErr(e.message);
+  } else {
+    setErr("An unknown error occurred");
     }
   }
 

@@ -35,6 +35,11 @@ It demonstrates proficiency in asynchronous programming with Python, modern API 
 - 🚨 **Error handling**: Gracefully handles scraping errors and invalid URLs.
 - 🚀 **Caching and optimization**: (If implemented) Improves response times for repeated requests.
 
+
+## 🎥 Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/jfMwgjjgFoE/hqdefault.jpg)](https://youtu.be/jfMwgjjgFoE)
+
 ---
 ## 🛠️ Getting Started
 

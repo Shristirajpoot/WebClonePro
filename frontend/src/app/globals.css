@@ -1,0 +1,129 @@
+/* styles.css or in your global CSS file */
+
+@import "tailwindcss";
+
+/* Light theme (default) */
+:root {
+  --background: #f9fafb;       /* subtle off-white */
+  --foreground: #111827;       /* dark gray text */
+  --primary: #3b82f6;          /* Tailwind blue-500 */
+  --secondary: #fbbf24;        /* Tailwind amber-400 */
+  --border-color: #e5e7eb;     /* light border */
+  --font-sans: var(--font-geist-sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif);
+  --font-mono: var(--font-geist-mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* Base font size for consistency */
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-feature-settings: "liga", "kern";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  border-color: var(--border-color);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(59, 130, 246, 0.3); /* primary color with transparency */
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(59, 130, 246, 0.6);
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+  outline-radius: 4px;
+}
+
+/* Links and buttons */
+a,
+button {
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+a:hover,
+button:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* Dark theme override */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #111827;      /* dark gray */
+    --foreground: #f3f4f6;      /* light gray */
+    --primary: #3b82f6;         /* blue-500 */
+    --secondary: #fbbf24;       /* amber-400 */
+    --border-color: #374151;    /* dark border */
+  }
+
+  body {
+    border-color: var(--border-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(59, 130, 246, 0.5);
+  }
+
+  ::-webkit-scrollbar-thumb:hover,
+  ::-webkit-scrollbar-thumb:active {
+    background-color: rgba(59, 130, 246, 0.8);
+  }
+}
+
+/* --- New styles to increase breadth and height --- */
+
+/* Limit container width and center */
+.container {
+  max-width: 1200px;  /* wider max width */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 100vh; /* full viewport height */
+}
+
+/* Make iframe taller and full width */
+iframe {
+  min-height: 600px;
+  width: 100%;
+  border: none;
+  flex-grow: 1;
+}
+
+/* Sidebar max height for scrolling */
+aside {
+  max-height: 500px; /* adjust as needed */
+  overflow-y: auto;
+}
+
+/* Preview section full width */
+.preview-section {
+  width: 100%;
+}

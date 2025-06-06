@@ -138,8 +138,8 @@ README.md      # Project overview and instructions
 This project leveraged open-source tools and frameworks like FastAPI and Playwright, which enabled rapid development and powerful scraping capabilities.
 
 📞 Contact
-Shristi Rajpoot
-🔗LinkedIn: www.linkedin.com/in/shristi-rajpoot-36774b281
+- Shristi Rajpoot
+- 🔗LinkedIn: www.linkedin.com/in/shristi-rajpoot-36774b281
 
 📄License
 MIT License. See LICENSE for details.
